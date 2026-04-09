@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 28px;
+  color: #1f2d3d;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #1f2d3d;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #2a7dbf;
+}
+
+.apresentacao {
+  background-color: #eaf2f8;
+  padding: 60px 0;
+}
+
+.apresentacao .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.apresentacao h2 {
+  font-size: 36px;
+  color: #1f2d3d;
+  margin-bottom: 20px;
+}
+
+.apresentacao p {
+  font-size: 18px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.apresentacao img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+.resumo-empresa,
+.servicos-destaque,
+.diferenciais,
+.chamada-contato {
+  padding: 60px 0;
+}
+
+.resumo-empresa h2,
+.servicos-destaque h2,
+.diferenciais h2,
+.chamada-contato h2 {
+  font-size: 30px;
+  color: #1f2d3d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resumo-empresa p,
+.diferenciais p,
+.chamada-contato p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.servicos-destaque .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.servicos-destaque article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #2a7dbf;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.servicos-destaque h3 {
+  color: #1f2d3d;
+  margin-bottom: 10px;
+}
+
+.chamada-contato a {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #2a7dbf;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.chamada-contato a:hover {
+  background-color: #1f5f91;
+}
+
+.chamada-contato .container {
+  text-align: center;
+}
+
+footer {
+  background-color: #1f2d3d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .apresentacao .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .apresentacao p {
+    max-width: 100%;
+  }
+
+  .apresentacao h2 {
+    font-size: 28px;
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.reveal.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#voltarTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2a7dbf;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
